@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css"; // Importing the CSS file
-
+import arrow from "./../../images/arrow.png";
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,7 +18,6 @@ const Header = () => {
 
   return (
     <header className="header">
-       
       <div className="container">
         <div className="logo">sunnyside</div>
         {/* Desktop menu */}
@@ -38,9 +37,7 @@ const Header = () => {
             <button className="menu-button">Projects</button>
           </div>
 
-         
           <div className="auth-buttons">
-            
             <button className="signup-button" onClick={handleLinkClick}>
               CONTACT
             </button>
@@ -49,24 +46,9 @@ const Header = () => {
 
         {/* Hamburger menu for mobile */}
         <div className="hamburger">
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="hamburger-button"
-            aria-expanded={isMobileMenuOpen}
-          >
-            <svg
-              className="hamburger-icon"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
+          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="hamburger-button" aria-expanded={isMobileMenuOpen}>
+            <svg className="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
             </svg>
           </button>
         </div>
@@ -84,7 +66,7 @@ const Header = () => {
           >
             About
           </a>
-      
+
           <a
             href="#page2"
             onClick={() => {
@@ -94,7 +76,7 @@ const Header = () => {
           >
             Services
           </a>
-          
+
           <a
             href="#page3"
             onClick={() => {
@@ -112,9 +94,9 @@ const Header = () => {
       <div className="hero">
         <div className="textHero">
           <h1 className="titleHero">WE ARE CREATIVES</h1>
-          
         </div>
-        
+
+        <img className="arrow" src={arrow} alt="arrow" />
       </div>
     </header>
   );

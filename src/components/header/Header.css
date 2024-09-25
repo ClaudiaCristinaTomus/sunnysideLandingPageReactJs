@@ -1,243 +1,261 @@
-/* Header.css */
-
 .header {
-    background-image: url('./../../images/desktop/image-header.jpg'); /* Image for desktop */
-    color: white;
-    padding: 16px;
-    padding-bottom:auto;
-    font-family: 'Lato', sans-serif;
-    padding: 1rem 10rem 5rem 10rem;
-    background-size: cover;
-    background-position: center;
-    
+  background-image: url("./../../images/desktop/image-header.jpg"); /* Image for desktop */
+  color: white;
+  padding: 16px;
+  padding-bottom: auto;
+  font-family: "Lato", sans-serif;
+  padding: 1rem 10rem 5rem 10rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 80px 80px;
+}
+.hero {
+  padding: 2rem 10rem 15rem 10rem;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  width: 12%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+}
+.textHero {
+  margin: 1rem 10rem 5rem 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.titleHero {
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-family: "Lato";
+}
+.buttonHero {
+  margin: 5rem 10rem 5rem 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.start-free {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 8px 16px;
+  text-align: center;
+}
+.learn-more {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 8px 16px;
+  border-radius: 26px;
+  text-align: center;
+}
+.start-free {
+  background: white;
+  color: #f56565;
+  border-radius: 26px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 16px; /* Added margin to create space between logo and menu */
+}
+
+.desktop-menu {
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 16px; /* Spacing between menu items */
+}
+
+.menu-button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menu-button:hover {
+  color: #e2e8f0; /* Lighter shade for hover effect */
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%; /* Position below the button */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  width: 200px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-item:hover {
+  background: #f7fafc; /* Light background on hover */
+}
+
+.auth-buttons {
+  display: flex;
+}
+
+.login-button,
+.signup-button {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 8px 16px;
+}
+
+.signup-button {
+  background: white;
+  color: #000000;
+  border-radius: 26px;
+  font-family: "Lato";
+}
+
+.hamburger {
+  display: none; /* Hidden by default */
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu {
+  background-color: rgba(235, 235, 240, 0.3);
+  color: black;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px 0;
+}
+
+.mobile-menu-item {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-dropdown {
+  background: linear-gradient(to right, #f56565, #ed64a6);
+}
+
+.mobile-dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile-dropdown-item:hover {
+  background: #edf2f7; /* Lighter background on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none; /* Hide desktop menu on mobile */
   }
-  
+
+  .hamburger {
+    display: block; /* Show hamburger menu on mobile */
+  }
+  .header {
+    padding: 1rem 1rem 5rem 1rem;
+    background-image: url("./../../images/mobile/image-header.jpg"); /* Image for desktop */
+  }
   .container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom-left-radius: 80px 80px;
-    
+    margin: 1rem 0rem 0rem 0rem;
   }
-  .textHero{
-    margin: 5rem 10rem 5rem 10rem;
-    display:flex;
+  .mobile-menu {
+    display: block; /* Show mobile menu */
+  }
+  .arrow {
+    position: absolute;
+    width: 20%;
+    height: 40%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .textHero {
+    margin: 1rem 2rem 0rem 2rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
   }
-  .titleHero{
-    font-size:36px;
-    letter-spacing: 3px;
-    font-family: 'Lato';
+  .titleHero {
+    font-size: 28px;
   }
-  .buttonHero{
-    margin: 5rem 10rem 5rem 10rem;
-    display:flex;
+  .buttonHero {
+    margin: 1rem 2rem 2rem 2rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
   }
-  
-  .start-free {
+  .signup-button {
     background: none;
     color: white;
     border: none;
     cursor: pointer;
     margin-left: 8px;
     padding: 8px 16px;
-    text-align: center;
-  }
-  .learn-more{
-    background: none;
-    color: white;
-    border: 1px solid white;
-    cursor: pointer;
-    margin-left: 8px;
-    padding: 8px 16px;
-    border-radius: 26px;
-    text-align: center;
-  }
-  .start-free{
-    background: white;
-    color: #f56565;
-    border-radius: 26px;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: 16px; /* Added margin to create space between logo and menu */
-  }
-  
-  .desktop-menu {
-    display: flex;
-  }
-  
-  .menu-item {
-    position: relative;
-    margin-right: 16px; /* Spacing between menu items */
-  }
-  
-  .menu-button {
-    background: none;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 8px;
-  }
-  
-  .menu-button:hover {
-    color: #e2e8f0; /* Lighter shade for hover effect */
-  }
-  
-  .dropdown {
-    position: absolute;
-    top: 100%; /* Position below the button */
+    width: 50%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-    margin-top: 8px;
-    width: 200px;
-    background: white;
-    color: black;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transform: translate(30%, 3%);
+    text-align: center;
   }
-  
-  .dropdown-item {
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .dropdown-item:hover {
-    background: #f7fafc; /* Light background on hover */
-  }
-  
-  .auth-buttons {
-    display: flex;
-  }
-  
-  .login-button,
-  .signup-button {
-    background: none;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-left: 8px;
-    padding: 8px 16px;
-  }
-  
+
   .signup-button {
     background: white;
-    color: #f56565;
+    color: #000000;
     border-radius: 26px;
   }
-  
-  .hamburger {
-    display: none; /* Hidden by default */
-  }
-  
-  .hamburger-button {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .hamburger-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .mobile-menu {
-    background-color: rgba(235, 235, 240, 0.3);
-    color: black;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 16px 0;
-  }
-  
-  .mobile-menu-item {
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .mobile-dropdown {
-    background: linear-gradient(to right, #f56565, #ed64a6);
-  }
-  
-  .mobile-dropdown-item {
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .mobile-dropdown-item:hover {
-    background: #edf2f7; /* Lighter background on hover */
-  }
-  
-  /* Media Queries */
-  @media (max-width: 768px) {
-    .desktop-menu {
-      display: none; /* Hide desktop menu on mobile */
-    }
-  
-    .hamburger {
-      display: block; /* Show hamburger menu on mobile */
-    }
-    .header{
-      padding: 1rem 2rem 5rem 2rem;
-    }
-  .container{
-    margin: 3rem 2rem 0rem 2rem;
-  }
-    .mobile-menu {
-      display: block; /* Show mobile menu */
-    }
-    .textHero{
-      margin: 3rem 2rem 0rem 2rem;
-      display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    }
-    .titleHero{
-      font-size: 28px;
-    }
-    .buttonHero{
-      margin: 1rem 2rem 2rem 2rem;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-    }
-    .signup-button {
-      background: none;
-      color: white;
-      border: none;
-      cursor: pointer;
-      margin-left: 8px;
-      padding: 8px 16px;
-      width:50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(30%, 3%);
-      text-align: center;
-    }
-    
-    .signup-button {
-      background: white;
-      color: #f56565;
-      border-radius: 26px;
+}
 
-    }
-  }
-  
