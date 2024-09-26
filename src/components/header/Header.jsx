@@ -91,14 +91,15 @@ const Header = () => {
           </a>
         </nav>
       )}
-      <div className="hero">
+      {!isMobileMenuOpen && ( <div className="hero">
         <div className="textHero">
           <h1 className="titleHero">WE ARE CREATIVES</h1>
         </div>
 
         <img className="arrow" src={arrow} alt="arrow" />
-      </div>
+      </div> )}
     </header>
+     
   );
 };
 
