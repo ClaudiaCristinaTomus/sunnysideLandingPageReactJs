@@ -1,0 +1,90 @@
+.allGraphic {
+    display: flex;
+}
+
+img {
+    display: block;
+}
+
+.graphic,
+.photo {
+    flex: 1 1 50%;
+    position: relative;
+    /* Permite poziționarea absolută a textului */
+}
+
+.imgGraphic,
+.imgPhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textGraphic {
+    position: absolute;
+    /* Face textul să fie poziționat absolut în raport cu containerul imaginii */
+    top: 80%;
+    /* Centrare verticală */
+    left: 50%;
+    /* Centrare orizontală */
+    transform: translate(-50%, -50%);
+    /* Ajustare pentru centrare perfectă */
+    color: rgb(20, 83, 75);
+    /* Text alb pentru a fi vizibil deasupra imaginii */
+    text-align: center;
+    z-index: 10;
+    /* Asigură suprapunerea textului peste imagine */
+
+}
+.textPhoto {
+    position: absolute;
+    /* Face textul să fie poziționat absolut în raport cu containerul imaginii */
+    top: 80%;
+    /* Centrare verticală */
+    left: 50%;
+    /* Centrare orizontală */
+    transform: translate(-50%, -50%);
+    /* Ajustare pentru centrare perfectă */
+    color: rgb(20, 18, 110);
+    /* Text alb pentru a fi vizibil deasupra imaginii */
+    text-align: center;
+    z-index: 10;
+    /* Asigură suprapunerea textului peste imagine */
+}
+.titleGraphic,
+.titlePhoto {
+    font-size: 24px;
+    font-weight: bold;
+}
+.paragraphGraphic,
+.paragraphPhoto {
+    margin-top: 2rem;
+    font-size: 20px;
+    line-height: 24px;
+}
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .allGraphic {
+        display: flex;
+        flex-direction: column;
+    }
+    .graphic,
+    .photo {
+        width: 100%;
+        height: 100%;
+    }
+    .titleGraphic,
+    .titlePhoto {
+        font-size: 20px;
+    }
+    .paragraphGraphic,
+    .paragraphPhoto {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 1rem;
+    }
+}
