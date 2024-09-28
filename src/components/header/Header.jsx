@@ -4,7 +4,7 @@ import arrow from "./../../images/arrow.png";
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+ 
   // Function to handle link clicks
   const handleLinkClick = () => {
     setActiveDropdown(null); // Close any active dropdown

@@ -4,7 +4,7 @@
   color: white;
   padding: 16px;
   padding-bottom: auto;
-  font-family: "Lato", sans-serif;
+  font-family: "Lora", sans-serif;
   padding: 1rem 10rem 5rem 10rem;
   background-size: cover;
   background-position: center;
@@ -25,15 +25,14 @@
 
 .arrow {
   position: absolute;
-  width: 12%;
-  top: 60%;
+  width: 9rem;
+  top: 65%;
   left: 50%;
   transform: translate(-60%, -50%);
 }
 
 .textHero {
-  margin: 1rem 10rem 5rem 10rem;
-
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,9 +40,9 @@
 }
 
 .titleHero {
-  font-size: 36px;
+  font-size: 50px;
   letter-spacing: 3px;
-  font-family: "Lato";
+  font-family: "Lora";
 }
 
 .buttonHero {
@@ -142,23 +141,23 @@
   display: flex;
 }
 
-.login-button,
 .signup-button {
-  background: none;
-  color: white;
+  background-color: white;
+  color: rgb(55, 55, 90);
+  border-radius: 26px;
+  font-family: "Lora";
+  font-weight: 800;
   border: none;
   cursor: pointer;
   margin-left: 8px;
   padding: 8px 16px;
+ 
 }
-
-.signup-button {
-  background: white;
-  color: #000000;
-  border-radius: 26px;
-  font-family: "Lato";
+.signup-button::before {
+  background-color: rgb(55, 55, 90);
+  color: white;
+ 
 }
-
 .hamburger {
   display: none;
   /* Hidden by default */
@@ -256,9 +255,9 @@
 
   .arrow {
     position: absolute;
-    width: 20%;
+    width: 6rem;
     height: 40%;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

@@ -1,0 +1,126 @@
+.brand {
+    display: flex;
+
+
+}
+
+.audience {
+    display: flex;
+
+}
+
+.leftBrand {
+    flex: 1 1 50%;
+}
+
+.rightBrand {
+    flex: 1 1 50%;
+}
+
+.rightAudience {
+    flex: 1 1 50%;
+}
+
+.leftAudience {
+    flex: 1 1 50%;
+}
+
+.imgBrand {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.imgAudience {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.textBrand {
+    padding: 9rem 10rem 4rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* pentru a permite mai multe linii */
+    gap: 25px;
+    /* spațiu între elementele flexibile */
+}
+
+.titleBrand {
+    font-family: "Lora";
+    font-size: 35px;
+    width: 70%;
+    font-weight: 900;
+    line-height: 38px;
+}
+
+.paragraphBrand {
+    font-family: "Lora";
+    font-size: 16px;
+    line-height: 26px;
+    color: rgb(88, 91, 91);
+    margin-bottom: 2rem;
+}
+
+.styleCTA{
+    width: 115px;
+    height: 40px;
+    position: relative;
+}
+
+.ctaBrand{
+    text-align: center;
+    z-index:3;
+    position: relative;
+    font-weight: bold;
+}
+.lineCTA {
+    border-top-left-radius: 7px;
+    border-top-right-radius:  7px;
+    border-bottom-left-radius:  7px;
+    border-bottom-right-radius:  7px;
+    background-color: rgb(238, 238, 116);
+    width: 115px;
+    height: 8px;
+    position: absolute;
+    top:12px;
+    z-index:2;
+}
+
+.lineCTA:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.styleCTA:hover {
+    
+    cursor: pointer;
+}
+
+
+.textAudience {
+    padding: 9rem 10rem 4rem 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* pentru a permite mai multe linii */
+    gap: 25px;
+    /* spațiu între elementele flexibile */
+}
+
+.titleAudience {
+    font-family: "Lora";
+    font-size: 35px;
+    width: 70%;
+    font-weight: 900;
+    line-height: 38px;
+}
+
+.paragraphAudience {
+    font-family: "Lora";
+    font-size: 16px;
+    line-height: 26px;
+    color: rgb(88, 91, 91);
+    margin-bottom: 2rem;
+}
