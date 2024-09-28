@@ -1,0 +1,24 @@
+.footer{
+    background-color: #89CCC1;
+    text-align: center;
+    padding:4rem 0;
+  
+}
+.imgFooter{
+    margin:0 auto;
+}
+.ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    color:rgb(60, 108, 108);
+    font-size:18px;
+    margin:2rem 0;
+}
+.sunny{
+    font-size:24px;
+    font-weight: bold;
+    color:rgb(60, 108, 108);
+    font-family: 'Lora',sans-serif;
+}
